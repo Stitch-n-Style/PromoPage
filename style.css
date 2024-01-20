@@ -1,0 +1,202 @@
+body {
+    overflow: hidden; /* Prevent scrolling until animation is complete */
+}
+
+#animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Set background color as needed */
+    z-index: 9999; /* Ensure it's above other elements */
+    animation: bounceOut 2s forwards; /* Apply bounceOut animation */
+}
+
+#logo {
+    width: 400px;
+}
+
+#kroma {
+    width: 350px;
+}
+#animation-text {
+    text-align: center;
+}
+
+@keyframes bounceOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh); 
+        opacity: 0;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: visible; /* Restore scrolling */
+}
+
+/* ... (your other styles) */
+
+
+#navigation-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar {
+    background-color: #352d2f;
+    text-align: center;
+}
+
+.navigation-bar img {
+    float: left;
+}
+
+.navigation-bar ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navigation-bar li {
+    list-style-type: none;
+    display: inline;
+}
+
+.navigation-bar li a {
+    color: black;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 15px;
+    opacity: 0.7;
+}
+
+#menu {
+    float: right;
+}
+
+
+
+
+button {
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #000000;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 10px;
+}
+.glow-on-hover{
+    position: relative;
+    background-color: black;
+    border-radius: 4em;
+    font-size: 1em;
+    color: white;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+  }
+  
+  .glow-on-hover:hover {
+    transition-duration: 0.1s;
+    background-color: #fcfcfc;
+    color: #000000;
+  }
+  
+  .glow-on-hover:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
+  
+  .glow-on-hover:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  .glow-on-hover:active {
+    top: 1px;
+  }
+/*Button*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+header {
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main navbar signup";
+    background-color: black;
+}
+
+header div img {
+    width: 200px;
+    grid-area: main;
+}
+
+header nav {
+    grid-area: navbar;
+}
+
+header div .cta-button {
+    grid-area: signup;
+    
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+header nav li {
+    margin-right: 20px; /* Adjust spacing between navigation items */
+}
+
+.hero{
+    padding: 5%;
+    align-items: center;
+    justify-items: center;
+}
