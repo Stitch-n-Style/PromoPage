@@ -1,5 +1,7 @@
+/*Animation*/
+
 body {
-    overflow: hidden; /* Prevent scrolling until animation is complete */
+    overflow: hidden; 
 }
 
 #animation-container {
@@ -12,9 +14,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fff; /* Set background color as needed */
-    z-index: 9999; /* Ensure it's above other elements */
-    animation: bounceOut 2s forwards; /* Apply bounceOut animation */
+    background-color: #fff; 
+    z-index: 9999; 
+    animation: bounceOut 2s forwards; 
 }
 
 #logo {
@@ -46,55 +48,9 @@ body {
 body {
     margin: 0;
     padding: 0;
-    overflow: visible; /* Restore scrolling */
+    overflow: visible; 
 }
-
-/* ... (your other styles) */
-
-
-#navigation-container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation-bar {
-    background-color: #352d2f;
-    text-align: center;
-}
-
-.navigation-bar img {
-    float: left;
-}
-
-.navigation-bar ul {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.navigation-bar li {
-    list-style-type: none;
-    display: inline;
-}
-
-.navigation-bar li a {
-    color: black;
-    font-size: 16px;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    line-height: 70px;
-    padding: 5px 15px;
-    opacity: 0.7;
-}
-
-#menu {
-    float: right;
-}
-
-
-
-
+/*Button format*/
 button {
     height: 50px;
     border: none;
@@ -153,7 +109,7 @@ button {
   .glow-on-hover:active {
     top: 1px;
   }
-/*Button*/
+/*Content Design*/
 * {
     margin: 0;
     box-sizing: border-box;
