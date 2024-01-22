@@ -1,0 +1,44 @@
+html,body{
+    font-family: Sans,Arial;
+    align-items: center;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    margin: auto 0;
+    padding: 15px;
+    border: 15px;
+    background: white;
+    background-image: url(./hero_img.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),url(./hero_img.webp));
+    box-shadow: 10px 20px 30px black;
+    background-size: cover;
+  }     
+  header{
+    text-align:start;
+    position: absolute;
+    top: 22%;
+    font-size: 3rem;
+    font-family: sans;
+    width: 9rem;
+    font-weight: bold;
+  }
+  input{
+    font-size: 1rem;
+    margin: 5px;
+    padding: 1px;
+    box-sizing: border-box;
+    width: 15rem;
+  }
+  input[type="button"]
+  {
+    width: 15rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  input[type="checkbox"]
+  {
+    display:inline-block;
+    width: 20px;
+  }
+  
