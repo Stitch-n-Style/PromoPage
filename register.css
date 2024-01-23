@@ -1,11 +1,12 @@
 html,body{
+    border-radius: 20px;
     font-family: Sans,Arial;
     align-items: center;
     font-size: 17px;
     display: flex;
     justify-content: center;
     height: 90%;
-    margin: auto 0;
+    margin:  0;
     padding: 15px;
     border: 15px;
     background: white;
@@ -14,31 +15,85 @@ html,body{
     box-shadow: 10px 20px 30px black;
     background-size: cover;
   }     
-  header{
+
+  .container {
+    width: 296px;
+    height: 400px;
+    padding: 20px 26px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 4px;
+    margin: 20px auto 25px auto;
+  }
+
+  /*.container p {
+    font-size: 15px;
+    line-height: 2;
+  }*/
+
+   header{
     text-align:start;
-    position: absolute;
-    top: 22%;
+    /*position: absolute;
+    top: 22%;*/                /* not required */
     font-size: 3rem;
     font-family: sans;
     width: 9rem;
     font-weight: bold;
   }
+
   input{
     font-size: 1rem;
     margin: 5px;
-    padding: 1px;
+    padding: 2px 5px;
     box-sizing: border-box;
-    width: 15rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 300px;
+    height: 30px;
   }
-  input[type="button"]
+
+  input[type="submit"]
   {
+    color: white;
+    background-color: rgb(38, 38, 38);
     width: 15rem;
     font-weight: bold;
     font-size: 1rem;
   }
+
   input[type="checkbox"]
   {
-    display:inline-block;
-    width: 20px;
+    /*display:inline-block;*/  /* not required */
+    width: 16px;
   }
   
+  .checkbox {
+    align-items: center;
+    display: flex;
+  }
+
+  /*.fix-num {
+    width: 30px;
+  }
+
+  /*.form p {
+    display: flex;
+    font-size: 13px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+  }*/
+
+  .note {
+    margin-top: 1px;
+    text-align: center;
+    display: flex;
+    font-size: 0.7rem;
+    align-items: center;
+   /* line-height: 1.5;*/
+    height: 30px;
+    background-color: rgb(227, 227, 227);
+    background-size: cover;
+    border-radius: 5px;
+  }
