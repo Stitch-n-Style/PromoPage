@@ -61,7 +61,7 @@ body {
     float: right;
 }
 
-/*Button format*/
+/Button format/
 
 button {
     height: 20px;
@@ -170,7 +170,7 @@ header nav li {
     margin-left: 15px; /* Adjust spacing between navigation items*/
 }
 
-/**hero section**/
+/*hero section*/
 
 .hero {
     display: flex;
@@ -275,7 +275,7 @@ a:hover {
     justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
     body {
         background-size: auto; 
     }
@@ -297,6 +297,7 @@ a:hover {
 
     header nav li {
         margin: 10px 0;
+    }
 
     .content-messg,
     .hero-messg {
@@ -313,5 +314,4 @@ a:hover {
         flex-direction: column;
         align-items: center;
     }
-
 }
