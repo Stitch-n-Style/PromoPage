@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="register.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="register"></div>
-            <header>Register</header>
-            <form action="#">
-              <label for="First Name">  <p>Enter Your First Name</p></label>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form>
+            <label for="First Name">Enter Your First Name</label>
               <div><input type="text" placeholder="First Name"></div>
-              <label for="Last Name"><p>Enter Your Last Name</p></label>
+              <label for="Last Name">Enter Your Last Name</label>
               <div><input type="text" placeholder="Last Name"></div>
-              <label for="e-mail"><p>Enter Your e-mail</p></label>
-              <div><input type="text" placeholder="Enter e-mail"></div>
-              <label for="Phone Number"><p>Enter Your Phone Number</p></label>
-              <div>
-                <div class="fix-num"><input type="tel" value="+91" readonly></div>
+              <label for="e-mail">Enter Your e-mail</label>
+              <div><input type="email" placeholder="Enter e-mail" id="email" name="email" required></div>
+              <label for="Phone Number">Enter Your Phone Number</label>
+              <div class="phone-number">
+                <div class="fix-num">+91</div>
                 <input type="tel" placeholder="Enter Phone Number" pattern="[0-9]{10}" title="Please enter 10 digit number" required></div>
-              <label for="Phone Number Format"><div class="note"><p><b>Format for Phone Number:</b> Enter ten digits Phone Number ONLY</p></div></label>
+              <label for="Phone Number Format"><div class="note">NOTE: Enter ten digits Phone Number ONLY</div></label>
               <div class="checkbox"><input type="checkbox">Send me updates</div>
                 <input type="submit" class="button" value="Submit">
-            </form>
-        </div>
-    </body>
+        </form>
+    </div>
+</body>
 </html>
