@@ -52,7 +52,9 @@ html,body{
     width: 300px;
     height: 30px;
   }
-
+#phone{
+  width: 255px;
+}
   input[type="submit"]
   {
     color: white;
@@ -67,23 +69,22 @@ html,body{
     /*display:inline-block;*/  /* not required */
     width: 16px;
   }
-  
+  #fix{
+    width: 40px;
+  }
   .checkbox {
     align-items: center;
     display: flex;
   }
 
-  /*.fix-num {
-    width: 30px;
-  }
 
-  /*.form p {
+  .form p {
     display: flex;
     font-size: 13px;
     padding-left: 2px;
     padding-bottom: 2px;
     margin-top: 5px;
-  }*/
+  }
 
   .note {
     margin-top: 1px;

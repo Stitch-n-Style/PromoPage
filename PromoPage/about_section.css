@@ -100,3 +100,9 @@ header img {
     height: 60px;
     width: 260px;
 }
+
+@media screen and (max-width: 767px) {
+    *{
+        width: 100%;
+    }
+}

@@ -61,8 +61,6 @@ body {
     float: right;
 }
 
-/Button format/
-
 button {
     height: 20px;
     font-size: 0.5rem;
@@ -276,6 +274,10 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
+    *{
+        width: 100%;
+    }
+    
     body {
         background-size: auto; 
     }
