@@ -25,6 +25,7 @@ form.addEventListener("submit", (e) => {
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
   const permission = document.getElementById("permission").checked;
+  const profession = document.getElementById("profession").value;
 
   ref.push({
     fName: fName,
@@ -32,7 +33,9 @@ form.addEventListener("submit", (e) => {
     email: email,
     phone: phone,
     permission: permission,
+    profession: profession,
   });
+
   alert.style.display = "block";
 
   setTimeout(() => {
