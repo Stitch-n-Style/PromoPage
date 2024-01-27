@@ -1,15 +1,35 @@
 body {
-  background-image: url("hero_img.webp");
-  background-size: cover;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background-image: url(hero_img.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 110vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
+/*nav bar*/
+header {
+  width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    height: 30px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+header img {
+  height: 30px;
+  width: 100px;
+  background-size: cover;
+}
+
+/*main form*/
 .container {
   background-color: #e5e5e5;
   background-size: cover;
@@ -42,6 +62,10 @@ input[type="submit"]
   font-size: 1rem;
 }
 
+input[type="submit"]:hover {
+  background-color: rgb(62, 62, 62);
+}
+
 input[type="checkbox"]
 {
   /*display:inline-block;*/  /* not required */
@@ -53,10 +77,10 @@ input[type="checkbox"]
   display: flex;
 }
 
-.fix-num {
-  height: 100%;
+.fix-num input[type="tel"] {
+  height: 69%;
+  width: 40px;
   display: flex;
-  margin-top: 4.5px;
   padding: 8px;
   border: 1px solid rgb(89, 89, 89);
   border-right: none;
@@ -64,8 +88,14 @@ input[type="checkbox"]
   background-color: #f9f9f9;
 }
 
+.profession {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .checkbox {
   align-items: center;
+  margin-top: 10px;
   display: flex;
   font-size: 14px;
 }
@@ -74,4 +104,37 @@ input[type="checkbox"]
   display: flex;
   color: #888;
   font-size: 12px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+.copyright {
+  background-color: black;
+  font-size: 0.7rem;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot-panel2 {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  border-top: 0.5px solid white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  background-image: url(kroma_dark.jpg);
+  background-size: cover;
+  height: 60px;
+  width: 260px;
 }

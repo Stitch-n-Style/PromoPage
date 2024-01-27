@@ -3,6 +3,28 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 768px) {
+    body { 
+        width: 100%;
+    }
+
+    .about-section {
+        display: block;
+    }
+
+    .card { 
+        margin: 20px auto 25px auto;
+    }
+
+    /*.card-2 {
+        margin: 20px auto 25px auto;
+    }*/
+
+    .card-3 { 
+        margin: 20px auto 25px auto;
+    }
+}
+
 body {
     overflow-x: auto; /* Enable horizontal scrolling */
     background-image: url("hero_img.webp");
@@ -11,13 +33,13 @@ body {
 }
 
 header {
-    height: 60px;                                       
-    padding: 1%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "main navbar signup";
-    background-color: white;
-    justify-content: space-evenly;
-    display: flex;
+  height: 60px;                                       
+  padding: 1%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "main navbar signup";
+  background-color: white;
+  justify-content: space-evenly;
+  display: flex;
 }
 
 header img {
@@ -33,6 +55,8 @@ header img {
 
 /*about Stitch and Style*/
 .card {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
     width: 296px;
     height: 300px;
     padding: 20px 26px;
@@ -43,10 +67,14 @@ header img {
     border-radius: 4px;
     margin-top: 30px;
     margin-left: 30px;
+   /* margin-right: 20px;
+    margin: 20px auto 25px auto;*/
 }
 
 /*empowering design section*/
 .card-2 {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
     width: 296px;
     height: 300px;
     padding: 20px 26px;
@@ -55,12 +83,15 @@ header img {
     flex-direction: column;
     border: 1px solid #ddd;
     border-radius: 4px;
-    margin-top: 30px;
-    margin: 20px auto 25px auto;
+   /* margin-top: 30px;
+    margin-right: 20px;*/
+    margin: 30px auto 25px auto;
 }
 
 /*Unique Features for Designers*/
 .card-3 {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
     width: 296px;
     height: 700px;
     padding: 20px 26px;
@@ -71,6 +102,8 @@ header img {
     border-radius: 4px;
     margin-right: 30px;
     margin-top: 30px; 
+    margin-bottom: 30px;
+   /* margin: 20px auto 25px auto;*/
 }
 
 /* footer */

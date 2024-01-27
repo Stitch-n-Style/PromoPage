@@ -7,23 +7,50 @@
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
+  <header>
+    <img id="logo" src="lightsns.png">
+   </header>  
     <div class="container">
         <h2>Register</h2>
         <form>
             <label for="First Name">Enter Your First Name</label>
-              <div><input type="text" placeholder="First Name"></div>
+              <div><input type="text" id="fName" placeholder="First Name"></div>
               <label for="Last Name">Enter Your Last Name</label>
-              <div><input type="text" placeholder="Last Name"></div>
+              <div><input type="text" id="lName" placeholder="Last Name"></div>
               <label for="e-mail">Enter Your e-mail</label>
               <div><input type="email" placeholder="Enter e-mail" id="email" name="email" required></div>
               <label for="Phone Number">Enter Your Phone Number</label>
               <div class="phone-number">
-                <div class="fix-num">+91</div>
-                <input type="tel" placeholder="Enter Phone Number" pattern="[0-9]{10}" title="Please enter 10 digit number" required></div>
+               <div class="fix-num"><input type="tel" id="fix-num" value="+91" readonly></div>
+                <input type="tel" id="phone" placeholder="Enter Phone Number" pattern="[0-9]{10}" title="Please enter 10 digit number" required></div>
               <label for="Phone Number Format"><div class="note">NOTE: Enter ten digits Phone Number ONLY</div></label>
-              <div class="checkbox"><input type="checkbox">Send me updates</div>
+              <label for="profession">Choose Your Profession</label>
+              <div class="profession"><label>
+                <input type="radio" id="profession" value="
+                Professional Tailor">Professional Tailor
+              </label>
+                <label>
+                  <input type="radio" id="profession" value="
+                Fasion Designer">Fasion Designer
+                </label>
+                <label>
+                  <input type="radio" id="profession" value="
+                Designing School Sudent">Designing School Sudent
+                </label>
+              </div>
+              <div class="checkbox"><input type="checkbox" id="permission">Send me updates</div>
                 <input type="submit" class="button" value="Submit">
         </form>
     </div>
+
+    <footer>
+      <div class="foot-panel2">
+          <div class="logo"></div>
+      </div>
+      <div class="copyright" id="copyright">
+          <p>&copy; 2024 Stitch & Style. All rights reserved.</p>
+      </div>
+  </footer>
+  
 </body>
 </html>

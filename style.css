@@ -172,6 +172,9 @@ header nav li {
 
 .hero {
     display: flex;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    margin-top: 15px;
 }
 
 .content-messg {
@@ -190,14 +193,34 @@ header nav li {
     width: 95%;
 }
 
+/** after hero section **/
+.how_it_works {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-family: arial;
+}
+
+.join_now {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-family: arial;
+}
+
+.community_support {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-family: arial;
+}
+
 /* footer */
 footer {
     margin-top: 15px;
 }
 
-.foot-panel {
+.foot-panel a {
     background-color: rgb(38, 38, 38);
     color: white;
+    text-decoration: none;
     height: 50px;
     display: flex;
     font-size: 0.85rem;
@@ -219,6 +242,15 @@ footer {
     margin-top: 20px;
 }
 
+.contact-info a {
+    color: white;
+    font-size: 20px;
+}
+
+.contact-info a i {
+    margin: 20px;
+}
+
 .social-media {
     margin-top: 20px;
 }
@@ -236,7 +268,7 @@ footer {
    /* list-style: none; */
 }
 
-a:hover {
+a:hover, .quick-links ul a:hover {
     text-decoration: underline;
     text-decoration-line: underline;
     text-decoration-thickness: initial;
